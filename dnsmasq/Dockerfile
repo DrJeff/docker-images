@@ -16,4 +16,4 @@ EXPOSE 68
 # TFTP: UDP port 69
 EXPOSE 69
 
-CMD /usr/sbin/dnsmasq --keep-in-foreground --log-facility=- --dhcp-authoritative --conf-dir=/etc/dnsmasq.d --enable-tftp --tftp-root=/srv/tftp
+CMD /usr/sbin/dnsmasq --keep-in-foreground --log-facility=- --user=root --dhcp-authoritative --conf-dir=/etc/dnsmasq.d --enable-tftp --tftp-root=/srv/tftp
