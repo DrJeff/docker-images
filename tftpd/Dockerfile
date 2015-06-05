@@ -3,7 +3,10 @@ MAINTAINER Clark Laughlin clark@laughlins.org
 
 RUN apt-get update
 RUN apt-get install -y tftpd-hpa
-VOLUME /var/lib/tftpboot
+
+RUN mkdir /srv/tftp
+VOLUME /srv/tftp
+
 EXPOSE 69
-CMD /usr/sbin/in.tftpd --foreground --user tftp --address 0.0.0.0:69 --secure /var/lib/tftpboot
+CMD /usr/sbin/in.tftpd --foreground --user tftp --address 0.0.0.0:69 --secure /srv/tftp
 

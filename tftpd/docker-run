@@ -1,0 +1,1 @@
+docker run -d -p 69:69/udp -v /srv/tftp:/srv/tftp --name tftpd clarktlaugh/tftpd
