@@ -4,7 +4,6 @@ MAINTAINER Clark Laughlin clark@laughlins.org
 RUN apt-get update
 RUN apt-get install -y dnsmasq
 
-RUN mkdir /etc/dnsmasq.d
 VOLUME /etc/dnsmasq.d
 
 # DNS: TCP/UDP port 53
