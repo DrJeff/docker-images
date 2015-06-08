@@ -1,0 +1,3 @@
+#!/bin/bash
+docker rmi apt-mirror
+docker build -t apt-mirror .
