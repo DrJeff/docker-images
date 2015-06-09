@@ -2,7 +2,7 @@ FROM ubuntu
 MAINTAINER Clark Laughlin clark@laughlins.org
 
 RUN apt-get update
-RUN apt-get install -y dnsmasq iptables
+RUN apt-get install -y dnsmasq iptables wget
 
 RUN wget --no-check-certificate https://raw.githubusercontent.com/jpetazzo/pipework/master/pipework
 RUN chmod +x pipework
