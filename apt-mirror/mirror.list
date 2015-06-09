@@ -29,3 +29,4 @@ deb-amd64 http://archive.ubuntu.com/ubuntu trusty-updates main restricted univer
 #deb-src http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
 
 clean http://archive.ubuntu.com/ubuntu
+clean http://ports.ubuntu.com
