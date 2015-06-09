@@ -1,0 +1,4 @@
+docker run -d --name lighttpd  \
+     -p 8080:80  \
+     -v /srv/www:/var/www  \
+     clarktlaugh/lighttpd
