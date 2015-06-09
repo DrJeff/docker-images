@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get install -y openssh-server lighttpd apt-mirror supervisor python-pip
 RUN pip install supervisor-stdout
 
-RUN mkdir /srv/apt-mirror
+RUN mkdir -p /srv/apt-mirror
 RUN mkdir -p /var/run/sshd
 RUN mkdir -p /var/log/supervisor
 RUN adduser www-data -G www-data -H -s /bin/false -D
