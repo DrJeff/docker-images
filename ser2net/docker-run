@@ -1,0 +1,5 @@
+docker run  \
+    -d  \
+    -p 2000 \
+    --name ser2net  \
+    clarktlaugh/ser2net
