@@ -4,7 +4,7 @@ MAINTAINER Clark Laughlin clark@laughlins.org
 RUN apt-get update
 RUN apt-get install -y dnsmasq iptables
 
-RUN wget --no-check-certificate https://raw.github.com/jpetazzo/pipework/master/pipework
+RUN wget --no-check-certificate https://raw.githubusercontent.com/jpetazzo/pipework/master/pipework
 RUN chmod +x pipework
 
 VOLUME /etc/dnsmasq.d
