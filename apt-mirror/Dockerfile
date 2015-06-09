@@ -2,7 +2,7 @@ FROM ubuntu
 MAINTAINER Clark Laughlin clark@laughlins.org
 
 RUN apt-get update
-RUN apt-get install -y openssh-server lighttpd apt-mirror supervisor
+RUN apt-get install -y openssh-server lighttpd apt-mirror supervisor supervisor-stdout
 
 RUN mkdir /srv/apt-mirror
 RUN mkdir -p /var/run/sshd
