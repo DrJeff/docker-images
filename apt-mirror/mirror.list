@@ -1,4 +1,4 @@
-############# config ##################
+########### config ##################
 #
 set base_path    /srv/apt-mirror
 # set mirror_path  $base_path/mirror
@@ -13,21 +13,14 @@ set _tilde       0
 #
 ############# end config ##############
 
-deb-arm64 http://ports.ubuntu.com trusty main restricted universe multiverse
-deb-arm64 http://ports.ubuntu.com trusty-backports main restructed universe multiverse
-deb-arm64 http://ports.ubuntu.com trusty-security main restricted universe multiverse
-deb-arm64 http://ports.ubuntu.com trusty-updates main restricted universe multiverse
-deb-arm64 http://ports.ubuntu.com trusty main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer
-deb-arm64 http://ports.ubuntu.com trusty-backports main/debian-installer restructed/debian-installer universe/debian-installer multiverse/debian-installer
-deb-arm64 http://ports.ubuntu.com trusty-security main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer
-deb-arm64 http://ports.ubuntu.com trusty-updates main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer
+deb-arm64 http://ports.ubuntu.com trusty main main/debian-installer restricted restricted/debian-installer universe universe/debian-installer multiverse multiverse/debian-installer
+deb-arm64 http://ports.ubuntu.com trusty-backports main main/debian-installer restricted restricted/debian-installer universe universe/debian-installer multiverse multiverse/debian-installer
+deb-arm64 http://ports.ubuntu.com trusty-security main main/debian-installer restricted restricted/debian-installer universe universe/debian-installer multiverse multiverse/debian-installer
+deb-arm64 http://ports.ubuntu.com trusty-updates main main/debian-installer restricted restricted/debian-installer universe universe/debian-installer multiverse multiverse/debian-installer
 
-deb-amd64 http://archive.ubuntu.com/ubuntu trusty main restricted universe multiverse
-deb-amd64 http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
-deb-amd64 http://archive.ubuntu.com/ubuntu trusty-updates main restricted universe multiverse
-deb-amd64 http://archive.ubuntu.com/ubuntu trusty main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer
-deb-amd64 http://archive.ubuntu.com/ubuntu trusty-security main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer
-deb-amd64 http://archive.ubuntu.com/ubuntu trusty-updates main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer
+deb-amd64 http://archive.ubuntu.com/ubuntu trusty main main/debian-installer restricted restricted/debian-installer universe universe/debian-installer multiverse multiverse/debian-installer
+deb-amd64 http://archive.ubuntu.com/ubuntu trusty-security main main/debian-installer restricted restricted/debian-installer universe universe/debian-installer multiverse multiverse/debian-installer
+deb-amd64 http://archive.ubuntu.com/ubuntu trusty-updates main main/debian-installer restricted restricted/debian-installer universe universe/debian-installer multiverse multiverse/debian-installer
 
 #deb http://archive.ubuntu.com/ubuntu trusty-proposed main restricted universe multiverse
 #deb http://archive.ubuntu.com/ubuntu trusty-backports main restricted universe multiverse
