@@ -4,6 +4,7 @@ MAINTAINER Clark Laughlin clark@laughlins.org
 RUN apt-get update
 RUN apt-get install -y dnsmasq supervisor
 
+RUN mkdir -p /srv/dnsmasq
 RUN touch /srv/dnsmasq/resolv.conf
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
