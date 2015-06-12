@@ -1,2 +1,1 @@
-CID=$(docker run --privileged -d -p 69:69/udp -p 53:53 -p 53:53/udp -p 67:67/udp  -v /srv/tftp:/srv/tftp -v /srv/dnsmasq.d:/etc/dnsmasq.d --name dnsmasq clarktlaugh/dnsmasq)
-sudo ~/bin/pipework br0 $CID 10.36.0.2/16
+docker run --privileged -d -p 53:53 -p 53:53/udp -v /srv/dnsmasq.d:/etc/dnsmasq.d --name dnsmasq clarktlaugh/dnsmasq
