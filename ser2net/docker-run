@@ -1,6 +1,6 @@
 docker run  \
     -d  \
-    -p 2000 \
+    -p 20115 -p 20096 \
     --device=/dev/ttyUSB0 \
     --name ser2net  \
     clarktlaugh/ser2net
