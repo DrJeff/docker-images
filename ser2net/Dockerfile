@@ -9,7 +9,7 @@ RUN mkdir -p /var/log/supervisor
 ADD ser2net.conf /etc/ser2net.conf
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-EXPOSE 20115
+EXPOSE 20116
 EXPOSE 20096
 
 CMD ["/usr/bin/supervisord"]
